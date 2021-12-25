@@ -1,0 +1,36 @@
+// .logo {
+//   display: block;
+//   font-size: 32px;
+//   line-height: 1.32;
+//   text-align: center;
+
+//   color: white;
+
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.02);
+//   }
+
+//   @include mobile() {
+//     margin-bottom: 10px;
+//   }
+// }
+
+// .logo__span {
+//   color: $accent-color;
+
+//   @extend %fa-icon;
+//   @extend .fas;
+
+//   &:before {
+//     display: inline-block;
+//     content: fa-content($fa-var-book-open);
+//     margin-right: 5.6px;
+
+//     @include tablet() {
+//       margin-right: 9.7px;
+//     }
+//   }
+// }

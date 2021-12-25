@@ -3,5 +3,21 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
 @import './base/reset';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+@import './layout/body';
+@import './components/container';
+@import './components/logo';
+@import './components/button';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/services';
+@import './layout/about';
+@import './layout/cases';
+@import './layout/blog';
+@import './layout/team';
+@import './layout/contact';
+@import './layout/footer';
