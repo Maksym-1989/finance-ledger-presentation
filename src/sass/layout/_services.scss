@@ -1,1 +1,92 @@
+.services {
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+  @include tablet() {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  @include desktop() {
+    padding-bottom: 20px;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.services__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  @include tablet() {
+    width: 185px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  @include desktop() {
+    width: calc(100% / 3);
+  }
+}
+
+.services__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  background-color: $accent-color;
+
+  margin-bottom: 11px;
+
+  @include tablet() {
+    width: 67px;
+    height: 67px;
+  }
+}
+
+.fa-pencil-alt {
+  font-size: 35px;
+  color: white;
+}
+.fa-book-reader {
+  font-size: 35px;
+  color: white;
+}
+.fa-university {
+  font-size: 35px;
+  color: white;
+}
+
+.services__subtitle {
+  margin-bottom: 15px;
+}
+
+.services__text {
+  font-size: 16px;
+  line-height: 1.62;
+  @include tablet() {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

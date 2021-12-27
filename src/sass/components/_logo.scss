@@ -1,36 +1,32 @@
-// .logo {
-//   display: block;
-//   font-size: 32px;
-//   line-height: 1.32;
-//   text-align: center;
+.logo {
+  display: flex;
+  font-size: 32px;
+  text-align: center;
 
-//   color: white;
+  color: white;
 
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear;
 
-//   &:hover,
-//   &:focus {
-//     transform: scale(1.02);
-//   }
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+  }
+}
 
-//   @include mobile() {
-//     margin-bottom: 10px;
-//   }
-// }
+.logo__span {
+  color: $accent-color;
 
-// .logo__span {
-//   color: $accent-color;
+  @include tablet() {
+    margin-right: 9.7px;
+  }
+}
 
-//   @extend %fa-icon;
-//   @extend .fas;
+.fa-book-open {
+  color: $accent-color;
 
-//   &:before {
-//     display: inline-block;
-//     content: fa-content($fa-var-book-open);
-//     margin-right: 5.6px;
+  margin-right: 5.7px;
 
-//     @include tablet() {
-//       margin-right: 9.7px;
-//     }
-//   }
-// }
+  @include tablet() {
+    margin-right: 9.7px;
+  }
+}

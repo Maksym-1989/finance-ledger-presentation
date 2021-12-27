@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: $body-background-color;
@@ -22,8 +22,27 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.66;
+  @include tablet() {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

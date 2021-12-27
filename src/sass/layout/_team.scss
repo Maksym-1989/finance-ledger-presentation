@@ -1,0 +1,132 @@
+.team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include tablet() {
+    padding-bottom: 60px;
+  }
+}
+
+.team__list-item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @include tablet() {
+    & {
+      margin-bottom: 10;
+    }
+  }
+}
+
+.team__subtitle {
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.team__title {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+  margin-bottom: 38px;
+
+  @include tablet() {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  @include desktop() {
+    grid-column-gap: 12px;
+  }
+}
+
+.team__box-photo {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @include tablet() {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.team__image {
+  transform: scale(1);
+
+  transition: transform 400ms linear, box-shadow 400ms linear;
+
+  .team__box-photo:hover &,
+  .team__box-photo:focus & {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.2);
+  }
+}
+
+.team__name {
+  font-size: 23px;
+  line-height: 1.25;
+
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  @include tablet() {
+    font-size: 25px;
+    line-height: 1.27;
+  }
+}
+
+.team__profession {
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+
+  @include tablet() {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+// ////////@include////////////////////////////////////
+
+.team__box-photo {
+  position: relative;
+}
+
+.team__box-social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+  transition: transform 400ms linear;
+  width: 100%;
+  height: 100%;
+
+  transform: scale(0);
+  z-index: 500;
+
+  .team__box-photo:hover &,
+  .team__box-photo:focus & {
+    transform: scale(1);
+  }
+}

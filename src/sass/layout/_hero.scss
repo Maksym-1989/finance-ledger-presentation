@@ -1,1 +1,100 @@
+.hero {
+  position: relative;
+  height: 533px;
+  width: 100%;
+  max-width: 1920px;
 
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../images/home/showcase.jpg');
+
+  //   background-image: image-set(
+  //     url('../images/home/showcase.webp') type('image/webp'),
+  //     url('../images/home/showcase.webp') type('image/jpeg')
+  //   );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  text-align: center;
+
+  @include tablet() {
+    height: 1024px;
+  }
+  @include desktop() {
+    height: 768px;
+  }
+}
+
+.hero__wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/home/showcase@2x.jpg');
+  }
+}
+
+.hero__title {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.27;
+
+  color: $hero-text-color;
+
+  margin-bottom: 16px;
+
+  @include tablet() {
+    margin-bottom: 25px;
+
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+.hero__text {
+  font-size: 22px;
+  line-height: 1.67;
+
+  color: $hero-text-color;
+
+  margin-bottom: 27px;
+
+  @include tablet() {
+    margin-bottom: 29px;
+  }
+}
+
+.hero__button {
+  width: 156px;
+  height: 45px;
+
+  background-color: $accent-color;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  @include tablet() {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.fa-angle-right {
+  margin-right: 5.8px;
+}

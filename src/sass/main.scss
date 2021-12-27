@@ -6,12 +6,15 @@
 @import './base/reset';
 @import './utils/variables';
 @import './utils/mixins';
+@import '../css/icons-font.css';
+
 @import './utils/visually-hidden';
 
 @import './layout/body';
 @import './components/container';
 @import './components/logo';
 @import './components/button';
+@import './components/social';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/services';
