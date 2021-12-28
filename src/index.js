@@ -1,5 +1,6 @@
 import './sass/main.scss';
 import $ from 'jquery';
+
 const header = document.querySelector('header');
 const inputEmailRef = document.getElementById('email');
 const errorMessageRef = document.querySelector('.form_error-message');
