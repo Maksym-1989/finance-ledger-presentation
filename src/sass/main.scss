@@ -1,12 +1,8 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
 @import './base/reset';
 @import './utils/variables';
 @import './utils/mixins';
 @import '../css/icons-font.css';
+@import './components/animate';
 
 @import './utils/visually-hidden';
 

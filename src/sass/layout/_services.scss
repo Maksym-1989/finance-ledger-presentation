@@ -24,6 +24,8 @@
 }
 
 .services__list-item {
+  transition: all 400ms ease-out;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
